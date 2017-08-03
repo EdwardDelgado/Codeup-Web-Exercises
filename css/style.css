@@ -1,4 +1,12 @@
 .fancy-header {
 color: purple;
 }
-
+h1 {
+    text-align: center;
+    color: aqua;
+    text-decoration: underline;
+}
+body {
+    background-color: coral;
+    background-image: image();
+}
