@@ -1,62 +1,35 @@
 h1 {
     text-decoration: underline;
     color: purple;
+    margin-bottom: 50px;
 }
 .box {
-    border: 1px;
-    width: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    width: 50px;
     height: 50px;
     padding: 10px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 10px;
+    margin: 25px;
+    float: left;
 }
 #red-box{
-    width: 50px;
-    height: 50px;
     background-color: red;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 0px;
 }
 #orange-box{
-    width: 50px;
-    height: 50px;
     background-color: orange;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 0px;
-    float: right;
 }
 #yellow-box{
-    width: 50px;
-    height: 50px;
     background-color: yellow;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 0px;
 }
 #green-box{
-    width: 50px;
-    height: 50px;
     background-color: green;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 90px;
+    clear: left;
 }
 #blue-box{
-    width: 50px;
-    height: 50px;
     background-color: blue;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 120px;
 }
 #purple-box{
-    width: 50px;
-    height: 50px;
     background-color: mediumpurple;
-    border: 1px solid black;
-    padding: 25px;
-    margin: 150px;
 }
