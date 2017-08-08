@@ -1,0 +1,95 @@
+/*import a san serif font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*applied imported font, put some padding around page border*/
+body {
+    font-family: 'Roboto', sans-serif;
+    padding:5px;
+}
+/*Backlights button that jumps to content in mobile version.*/
+.alert-info {
+    background-color: cyan;
+    border: solid 1px;
+    width: 100%;
+    text-align:center;
+}
+/*Modifies text in the link*/
+.alert-info>a{
+    color:black;
+    text-decoration:none;
+}
+/*Removed padding in the ul so that it takes 100% of page.*/
+.nav-links{
+    padding-left:0px;
+}
+/*Put color and text formatting into the nav menu of mobile.*/
+.nav-links>li{
+    background-color: lightgrey;
+    border: 1px solid;
+    width:100%;
+    margin-bottom:5px;
+    text-align:center;
+    list-style:none;
+}
+/*Styling to shrink img down to mobile size*/
+.header-img>img{
+    width:100%;
+    margin:0%;
+}
+/*Alligned title for mobile vesion*/
+h1{
+    text-align:center;
+}
+/*sub section styling to make it italic*/
+.sub-section{
+    font-style:italic;
+}
+/*Aligns footer to allow placement of social media links*/
+footer>p{
+    float:left;
+    margin:15px 5px;
+}
+/*alligns social media links*/
+#social-media-links{
+    float:right;
+    margin:15px 5px;
+}
+
+/*.Media module to make desktop*/
+@media screen and (min-width:960px){
+    /*Hides the jump to content button from mobile.*/
+    .hidden-on-mobile{
+        display:none;
+    }
+    /*Company title is repositioned*/
+    h1{
+        text-align:left;
+        float:left;
+        margin:15px 0px 15px 0px;
+    }
+    /*nav links are repositioned to be vertically aligned with title*/
+    .nav-links{
+        float:right;
+        margin:26px 0px 16px 0px;
+        text-align: right;
+    }
+    /*walk back the styling of mobile. Display nav menu inline*/
+    .nav-links>li{
+        display:inline;
+        background-color:transparent;
+        border:none;
+    }
+    /*make columns for the content*/
+    .main{
+        float:left;
+        width:55%;
+    }
+    .sub-section{
+        float:left;
+        width:35%;
+    }
+    /*Since the columns are floating, need the footer to clear underneath them*/
+    footer{
+        clear:both;
+    }
+
+}
