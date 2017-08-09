@@ -1,0 +1,7 @@
+.jumbotron {
+background-image: url("../IMG/pizza.png");
+}
+
+div.transbox {
+    opacity: .5;
+}
