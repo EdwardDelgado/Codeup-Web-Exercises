@@ -30,3 +30,7 @@ switch (color) {
     // TODO: create a default case that will catch indigo and violet
     // TODO: for the default case, log: I do not know anything by that color.
 }
+
+var sale = 180
+var minSale = 200
+
