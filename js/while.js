@@ -25,3 +25,5 @@ console.log("Yay! I sold them all!");
 //5 cones sold...  // if there are enough cones
     //Cannot sell you 6 cones I only have 3...  // If there are not enough cones
    // Yay! I sold them all! // If there are no more cones
+
+var
