@@ -1,8 +1,10 @@
 "Use Strict"
-var i = 0;
 
-while (i < 16) {
-    console.log('1' * i * i);
-    i++;
+var limit = 65536;
+var powersOfTwo = 2;
+
+while (powersOfTwo <= limit) {
+    console.log(powersOfTwo);
+    powersOfTwo *= 2;
 }
 
