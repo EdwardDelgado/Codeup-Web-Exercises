@@ -11,9 +11,18 @@
 
     // TODO: Create log statements that will print each of the names array elements individually.
 
-    console.log(names[0]);
-    console.log(names[1]);
-    console.log(names[2]);
-    console.log(names[3]);
+//    console.log(names[0]);
+//    console.log(names[1]);
+//    console.log(names[2]);
+//    console.log(names[3]);
+
+    for (var x = 0; x < names.length; x++) {
+    console.log(names [x]);
+    }
+
+    names.forEach(function (element){
+
+        console.log(element);
+    });
 
 })();
