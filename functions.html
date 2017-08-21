@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+<script>
+    var firstName = "Edward";
+    var lastName = "Delgado";
+    var age = 16;
+
+    function showInfo(age, city) {
+        console.log(firstName + " " + lastName);
+        if(age != 0){
+            console.log("Age: " + age);
+        }
+
+        if(city != "" && city != undefined){
+            console.log("City: " + city);
+        }
+    }
+
+    //Anon function and a return type function
+    var sum = function (a, b) {
+    return a + b;
+    }
+
+    showInfo(age);
+
+    var res = sum (1,2);
+
+    console.log(res);
+
+    //The variables created here are local variables and could be used ONLY inside the function
+
+    function innerScope(){
+        var phone = "512-459-2222";
+    }
+
+    function getAddress() {
+        var address = "Austin hwy";
+        return address;
+    }
+
+    innerScope();
+
+  // console.log(address);
+
+    console.log(getAddress());
+
+    //sumOnePlusOne();
+
+    //for (var i = 0; i , 100; i++) {
+    //    printName();
+    //}
+
+
+
+</script>
+</body>
+</html>
