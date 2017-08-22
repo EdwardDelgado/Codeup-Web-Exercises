@@ -6,12 +6,16 @@
      * Create person object, store it in a variable named person
      */
 
+    var person = {};
 
     /**
      * TODO:
      * Create firstName and lastName properties in your person object, and
      * assign your name to them
      */
+
+    person.firstName = "Edward";
+    person.lastName = "Delgado";
 
     /**
      * TODO:
@@ -22,6 +26,12 @@
      * Example
      * person.sayHello() // returns "Hello from Rick Sanchez!"
      */
+
+    person.sayHello = function(){
+        return "Hello from " + this.firstName + " " + this.lastName + "!";
+    }
+
+    console.log(person.sayHello());
 
     /** TODO: Remember this problem from before?
      *
@@ -37,11 +47,17 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+         {name: 'Cameron', amount: 180},
+         {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
 
+    var discount = 0;
+    var totalAfterDiscount = shoppers[0].amount;
+
+
+
+    console.log("Cameron has to pay $180, it has a discount of $0, the totla to pay after the discount is $0");
 
 })();
