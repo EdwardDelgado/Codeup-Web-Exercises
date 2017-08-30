@@ -1,3 +1,5 @@
+"use strict";
+
 var mapOptions = {
     // Set the zoom level
     zoom: 19,
@@ -8,8 +10,6 @@ var mapOptions = {
         lng: -97.708040
     }
 };
-
-
 
 var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
