@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+    <h1>National Parks Faq</h1>
+</head>
+<body>
+<a id="highlight-important" href="#">invisible</a>
+
+    <dl class="faq">
+        <dt>What state/states is Yellowstone located?</dt>
+        <dd class = "invisible">Wyoming, Montana & Idaho</dd>
+        <dt>What state/states is Sequoia located?</dt>
+        <dd class = "invisible">California</dd>
+        <dt>What state/states is Yosemite located?</dt>
+        <dd class = "invisible">California</dd>
+        <dt>What state/states is Mount Rainier located?</dt>
+        <dd class = "invisible">Washington</dd>
+        <dt>What state/states is Crater Lake located?</dt>
+        <dd class = "invisible">Oregon</dd>
+        <dt>What state/states is Wind Cave located?</dt>
+        <dd class = "invisible">South Dakota</dd>
+        <dt>What state/states is Mesa Verde located?</dt>
+        <dd class = "invisible">Colorado</dd>
+        <dt>What state/states is Glacier located?</dt>
+        <dd class = "invisible">Montana</dd>
+        <dt>What state/states is Rocky Mountain located?</dt>
+        <dd class = "invisible">Colorado</dd>
+        <dt>What state/states is Big Bend located?</dt>
+        <dd class = "invisible">Texas</dd>
+    </dl>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script>
+        "use strict";
+
+        $('#highlight-important').click(function(event) {
+            event.preventDefault();
+            $('dd').toggleClass('invisible');
+        });
+
+    </script>
+
+</body>
+</html>
