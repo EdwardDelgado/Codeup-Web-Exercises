@@ -11,7 +11,7 @@
     <h1>National Parks Faq</h1>
 </head>
 <body>
-<a id="highlight-important" href="#">invisible</a>
+<button id="showAnswers" href="">Show answers</button>
 
     <dl class="faq">
         <dt>What state/states is Yellowstone located?</dt>
@@ -42,10 +42,20 @@
     <script>
         "use strict";
 
-        $('#highlight-important').click(function(event) {
-            event.preventDefault();
-            $('dd').toggleClass('invisible');
-        });
+        (function(){
+
+
+            $("#showAnswers").click(function(event){
+            $("dd").toggleClass("invisible");
+            });
+
+            $("dt").click(function(){
+                // Just for fun
+                    //$("dt").css("background-color", "transparent");
+                $(this).css("background-color", "yellow");
+                });
+            })();
+
 
     </script>
 
