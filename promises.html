@@ -19,6 +19,23 @@
 
         wait(1000).then(() => console.log('You\'ll see this after 1 second'));
         wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
+
+        const optionalHeaders = {
+          headers: {
+              "Authorization": "token 220ca0124ccb2051928826e524c5fa8b26565540"
+          }
+        };
+
+        const getCommits = (username) => {
+            return fetch ("https://api.github.com/users/${username}/events",)
+        };
+
+        let githubpPromise = getCommits("EdwardDelgado");
+        githubpPromise.then( () => {
+            data.json().then( (response) => {
+                console.log(response);
+            })
+        } )
     </script>
 
 </body>
